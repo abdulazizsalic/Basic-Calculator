@@ -1,0 +1,34 @@
+<div class="body flex flex-row min-h-screen justify-center items-center">
+  <div class="calc flex flex-col p-2 border border-black h-[500px] w-[500px] bg-[#A6AEBF]">
+    <div class="border border-black result-field h-[20%] mb-2 bg-[#C5D3E8]">
+      <app-result [result]="result" [equation]="equation" [rightNumber]="rightNumber" [isDecimal]="isDecimal"></app-result>
+    </div>
+    <div class="buttons grid grid-cols-4 gap-4 p-2 border border-black flex-1 bg-[#FFF8DE]">
+      <app-button [btnLabel]="'%'" [btnType]="'specialOp'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'CE'" [btnType]="'specialOp'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'C'" [btnType]="'reset'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'x'" [btnType]="'delete'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'1/×'" [btnType]="'operator'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'×²'" [btnType]="'specialOp'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'√×'" [btnType]="'specialOp'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'÷'" [btnType]="'operator'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'7'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'8'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'9'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'×'" [btnType]="'operator'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'4'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'5'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'6'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'-'" [btnType]="'operator'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'1'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'2'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'3'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'+'" [btnType]="'operator'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'±'" [btnType]="'sign'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'0'" [btnType]="'number'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'.'" [btnType]="'decimal'" (clickEvent)="click($event)"></app-button>
+      <app-button [btnLabel]="'='" [btnType]="'operator'" (clickEvent)="click($event)"></app-button>
+    </div>
+  </div>
+</div>
+
